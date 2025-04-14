@@ -164,7 +164,7 @@
       box-shadow: 0px 0px 35px var(--secondary-color);
       border-radius: 10px;
       transition: transform 0.3s;
-      animation: BorderAnim .1s infinite;
+/*       animation: BorderAnim .1s infinite; */
     }
 
     .card:hover {
@@ -217,7 +217,6 @@
 <body>
   
   <div class="rotating-element"><img class="daddyElon" src="elong.png" alt="S  O  H  A  M"></div>
-    <label class="soham">SXHAM</label>
     <div class="scroller">
     <br>
   <h1>My Repositories</h1>
@@ -228,15 +227,6 @@
 
 
   <script>
-
-document.addEventListener('mousemove', function(event) {
-  var floatingElement = document.querySelector('.rotating-element');
-  var offsetX = floatingElement.offsetWidth / 2;
-  var offsetY = floatingElement.offsetHeight / 2;
-  floatingElement.style.display = 'block';
-  floatingElement.style.left = (event.clientX - offsetX) + 'px';
-  floatingElement.style.top = (event.clientY - offsetY) + 'px';
-});
 
 
 
@@ -292,7 +282,7 @@ document.addEventListener('mousemove', function(event) {
       });
     }
 
-    fetch('https://api.github.com/users/sohamkore/repos')
+    fetch('https://api.github.com/users/nikitakagane/repos')
       .then(function(response) {
         return response.json();
       })
